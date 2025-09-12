@@ -13,7 +13,8 @@
     <title>Pepets Spa</title>
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <!-- Navbar fija -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
       <div class="container-fluid">
         <a class="navbar-brand" href="#">Pepets Spa</a>
         <button
@@ -27,12 +28,11 @@
         >
           <span class="navbar-toggler-icon"></span>
         </button>
+
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="index.html"
-                >Inicio</a
-              >
+              <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="servicios.html">Servicios</a>
@@ -40,25 +40,76 @@
             <li class="nav-item">
               <a class="nav-link" href="nosotros.html">Nosotros</a>
             </li>
+          </ul>
+
+          <!-- Botones a la derecha -->
+          <ul class="navbar-nav ms-auto">
             <li class="nav-item">
-              <a class="nav-link" href="#">Disabled</a>
+              <a class="nav-link btn-login" href="login.html">Iniciar Sesión</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link btn btn-register" href="registro.html">Registrarse</a>
             </li>
           </ul>
         </div>
       </div>
     </nav>
 
-    <div class="container">
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam
-        doloribus ab sit recusandae soluta dolorem, neque itaque ipsam quidem.
-        Assumenda ducimus quisquam itaque suscipit quis vero omnis nulla eius
-        dicta? Unde rem recusandae totam sit laudantium labore doloribus
-        facilis, officiis deserunt ab repellat vitae debitis at eum consequatur,
-        eos qui ea, voluptate eveniet animi voluptas. Aspernatur doloribus omnis
-        sit architecto?
-      </p>
+    <!-- Hero -->
+    <section class="hero position-relative">
+      <img src="resources/img/indeximg.jpg" alt="Mascotas felices" class="img-fluid w-100" />
+      <div class="overlay position-absolute top-0 start-0 w-100 h-100"></div>
+      <div class="hero-content position-absolute top-50 start-50 translate-middle text-center text-white">
+        <h1>Bienvenidos a Pepets Spa</h1>
+        <p>El mejor cuidado y hospedaje para tus mascotas.</p>
+        <a href="servicios.html" class="btn btn-secondary mt-3">Ver Servicios</a>
+      </div>
+    </section>
 
+    <!-- Texto introductorio -->
+    <div class="container my-5 text-center">
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam doloribus ab sit recusandae soluta dolorem, neque itaque ipsam quidem. Assumenda ducimus quisquam itaque suscipit quis vero omnis nulla eius dicta?
+      </p>
     </div>
+
+    <!-- Quick Links -->
+    <section class="quick-links py-5 text-center">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-md-3 mb-3">
+            <a href="servicios.html" class="btn btn-outline-primary w-100">Servicios</a>
+            <p>Conoce todo lo que ofrecemos para tus mascotas.</p>
+          </div>
+          <div class="col-md-3 mb-3">
+            <a href="nosotros.html" class="btn btn-outline-secondary w-100">Nosotros</a>
+            <p>Descubre nuestro equipo y filosofía de trabajo.</p>
+          </div>
+          <div class="col-md-3 mb-3">
+            <a href="contacto.html" class="btn btn-outline-success w-100">Contacto</a>
+            <p>Agenda una cita o resuelve tus dudas.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA simple -->
+    <section class="cta py-5 text-center bg-light">
+      <div class="container">
+        <h2>Agenda una cita hoy</h2>
+        <p>Tu mascota merece el mejor cuidado.</p>
+        <a href="contacto.html" class="btn btn-primary btn-lg mt-3">Contactar</a>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-4 text-center">
+      <div class="container">
+        <p>Pepets Spa &copy; 2025 | Dirección, Teléfono, Email</p>
+        <p>Síguenos en nuestras redes sociales</p>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
   </body>
 </html>
