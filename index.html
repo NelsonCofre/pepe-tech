@@ -9,50 +9,32 @@
       integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="css/style.css" />
     <title>Pepets Spa</title>
   </head>
   <body>
     <!-- Navbar fija -->
     <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#">Pepets Spa</a>
+      <div class="container">
+        <a class="navbar-brand" href="index.html">Pepets Spa</a>
         <button
           class="navbar-toggler"
           type="button"
           data-bs-toggle="collapse"
           data-bs-target="#navbarNav"
-          aria-controls="navbarNav"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
         >
           <span class="navbar-toggler-icon"></span>
         </button>
-
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="index.html"
-                >Inicio</a
-              >
+              <a class="nav-link btn active" href="index.html">Inicio</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="servicios.html">Servicios</a>
+              <a class="nav-link btn" href="servicios.html">Servicios</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="nosotros.html">Nosotros</a>
-            </li>
-          </ul>
-
-          <!-- Botones a la derecha -->
-          <ul class="navbar-nav ms-auto">
-            <li class="nav-item">
-              <a class="nav-link btn-login" href="login.html">Iniciar Sesión</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link btn btn-register" href="registro.html"
-                >Registrarse</a
-              >
+              <a class="nav-link btn" href="nosotros.html">Nosotros</a>
             </li>
           </ul>
         </div>
@@ -60,6 +42,7 @@
     </nav>
 
     <!-- Hero -->
+
     <section class="hero position-relative">
       <img
         src="resources/img/indeximg.jpg"
@@ -68,7 +51,7 @@
       />
       <div class="overlay position-absolute top-0 start-0 w-100 h-100"></div>
       <div
-        class="hero-content position-absolute top-50 start-50 translate-middle text-center text-white"
+        class="hero-content position-absolute top-50 start-50 translate-middle text-white"
       >
         <h1>Bienvenidos a Pepets Spa</h1>
         <p>El mejor cuidado y hospedaje para tus mascotas.</p>
@@ -78,7 +61,6 @@
       </div>
     </section>
 
-    <!-- Texto introductorio -->
     <div class="container my-5 text-center">
       <p>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam
@@ -88,7 +70,6 @@
       </p>
     </div>
 
-    <!-- Quick Links -->
     <section class="quick-links py-5 text-center">
       <div class="container">
         <div class="row justify-content-center">
@@ -114,22 +95,74 @@
       </div>
     </section>
 
-    <!-- CTA simple -->
     <section class="cta py-5 text-center bg-light">
       <div class="container">
         <h2>Agenda una cita hoy</h2>
         <p>Tu mascota merece el mejor cuidado.</p>
-        <a href="contacto.html" class="btn btn-primary btn-lg mt-3"
-          >Contactar</a
-        >
+
+        <a href="contacto.html" class="btn btn-primary btn-lg mt-3">Agendar</a>
       </div>
     </section>
 
     <!-- Footer -->
-    <footer class="bg-dark text-white py-4 text-center">
+    <footer class="bg-dark text-white pt-4 mt-5">
       <div class="container">
-        <p>Pepets Spa &copy; 2025 | Dirección, Teléfono, Email</p>
-        <p>Síguenos en nuestras redes sociales</p>
+        <div class="row">
+          <!-- Columna 1: Logo / Nombre -->
+          <div class="col-md-4 mb-3">
+            <h5>Spa de Mascotas 🐾</h5>
+            <p>Cuidamos y consentimos a tus compañeros peludos.</p>
+          </div>
+
+          <!-- Columna 2: Links -->
+          <div class="col-md-4 mb-3">
+            <h5>Enlaces Rápidos</h5>
+            <ul class="list-unstyled">
+              <li>
+                <a href="index.html" class="text-white text-decoration-none"
+                  >Inicio</a
+                >
+              </li>
+              <li>
+                <a href="nosotros.html" class="text-white text-decoration-none"
+                  >Quiénes Somos</a
+                >
+              </li>
+              <li>
+                <a href="equipo.html" class="text-white text-decoration-none"
+                  >Nuestro Equipo</a
+                >
+              </li>
+              <li>
+                <a href="servicios.html" class="text-white text-decoration-none"
+                  >Servicios</a
+                >
+              </li>
+              <li>
+                <a href="galeria.html" class="text-white text-decoration-none"
+                  >Galería</a
+                >
+              </li>
+              <li>
+                <a href="contacto.html" class="text-white text-decoration-none"
+                  >Contacto</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div class="col-md-4 mb-3">
+            <h5>Contáctanos</h5>
+            <p>Email: spa@mascotas.com</p>
+            <p>Tel: +56 9 1234 5678</p>
+            <p>Dirección: Av. Siempre Viva 123, Santiago</p>
+          </div>
+        </div>
+
+        <!-- Línea inferior -->
+        <div class="text-center mt-3 border-top pt-3">
+          <p>&copy; 2025 Spa de Mascotas | Todos los derechos reservados</p>
+        </div>
       </div>
     </footer>
 
