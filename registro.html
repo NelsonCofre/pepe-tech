@@ -13,7 +13,7 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
     />
     <link rel="stylesheet" href="css/style.css" />
-    <title>Pepets Spa</title>
+    <title>Registro - Pepets Spa</title>
   </head>
   <body class="login-page">
     <!-- NAVBAR -->
@@ -35,7 +35,7 @@
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav ms-auto">
             <li class="nav-item">
-              <a class="nav-link active" href="index.html">Inicio</a>
+              <a class="nav-link" href="index.html">Inicio</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="servicios.html">Servicios</a>
@@ -49,16 +49,29 @@
             <li class="nav-item">
               <a class="nav-link" href="login.html">Login</a>
             </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="registro.html">Registro</a>
+            </li>
           </ul>
         </div>
       </div>
     </nav>
 
-    <!-- LOGIN CARD -->
+    <!-- REGISTRO CARD -->
     <div class="login-wrapper">
       <div class="login-card">
-        <h3 class="mb-4">Iniciar Sesión</h3>
-        <form>
+        <h3 class="mb-4">Registro de Usuario</h3>
+        <form id="form-registro">
+          <div class="mb-3 text-start">
+            <label for="nombre" class="form-label">Nombre Completo</label>
+            <input
+              type="text"
+              class="form-control"
+              id="nombre"
+              placeholder="Tu nombre"
+              required
+            />
+          </div>
           <div class="mb-3 text-start">
             <label for="email" class="form-label">Correo</label>
             <input
@@ -66,6 +79,7 @@
               class="form-control"
               id="email"
               placeholder="ejemplo@email.com"
+              required
             />
           </div>
           <div class="mb-3 text-start">
@@ -75,11 +89,36 @@
               class="form-control"
               id="password"
               placeholder="********"
+              required
             />
           </div>
-          <button class="btn btn-primary w-100 btn-custom">Ingresar</button>
+          <div class="mb-3 text-start">
+            <label for="nombreMascota" class="form-label">Nombre Mascota</label>
+            <input
+              type="text"
+              class="form-control"
+              id="nombreMascota"
+              placeholder="Nombre de tu mascota"
+              required
+            />
+          </div>
+          <div class="mb-3 text-start">
+            <label for="telefono" class="form-label">Teléfono</label>
+            <input
+              type="tel"
+              class="form-control"
+              id="telefono"
+              placeholder="+56 9 1234 5678"
+              required
+            />
+          </div>
+          <button type="submit" class="btn btn-primary w-100 btn-custom submit">
+            Registrarse
+          </button>
         </form>
       </div>
     </div>
+
+    <script src="js/registro.js"></script>
   </body>
 </html>
