@@ -21,6 +21,8 @@ document.querySelectorAll(".btn-add").forEach((btn) => {
   });
 });
 
+
+
 document.getElementById("reservarBtn").addEventListener("click", () => {
   const fecha = document.getElementById("fechaCita").value;
   const hora = document.getElementById("horaCita").value;
@@ -29,17 +31,18 @@ document.getElementById("reservarBtn").addEventListener("click", () => {
     return;
   }
 
-  // Servicios seleccionados
-  const serviciosSeleccionados = [];
-  document.querySelectorAll(".btn-add.selected").forEach((btn) => {
-    serviciosSeleccionados.push(
-      btn.closest(".servicio-card").querySelector(".card-title").textContent
-    );
-  });
+    // Servicios seleccionados
+    const serviciosSeleccionados = [];
+    document.querySelectorAll(".btn-add.selected").forEach((btn) => {
+      serviciosSeleccionados.push(
+        btn.closest(".servicio-card").querySelector(".card-title").textContent
+      );
+    });
 
-  alert(
-    `Reserva confirmada para ${fecha} a las ${hora}.\nServicios: ${serviciosSeleccionados.join(
-      ", "
-    )}\nSubtotal: $${subtotal.toLocaleString()}`
-  );
-});
+    alert(
+      `Reserva confirmada para ${fecha} a las ${hora}.\nServicios: ${serviciosSeleccionados.join(
+        ", "
+      )}\nSubtotal: $${subtotal.toLocaleString()}`
+    );
+    location.reload();
+  });

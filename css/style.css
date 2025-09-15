@@ -5,12 +5,6 @@
   box-sizing: border-box;
 }
 
-body {
-  font-family: "Segoe UI", sans-serif;
-  background-color: #fff;
-  margin: 0;
-  padding-top: 70px; /* espacio para navbar fija */
-}
 
 /* ===================== */
 /* NAVBAR                */
@@ -210,7 +204,6 @@ footer a:hover {
   color: #333;
 }
 
-<<<<<<< HEAD
 
 
 img {
@@ -222,7 +215,6 @@ img {
 
 
 
-=======
 .login-wrapper .form-control {
   border-radius: 12px;
   padding: 0.75rem 1rem;
@@ -275,4 +267,19 @@ img {
     font-size: 1.5rem;
   }
 }
->>>>>>> ab94eb4a30b08e12f5375351fb41e3c12c440d86
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

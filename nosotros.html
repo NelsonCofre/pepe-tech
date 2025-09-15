@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="es">
-<<<<<<< HEAD
 
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
   <link rel="stylesheet" href="css/style.css" />
   <title>Nosotros - Pepets Spa</title>
 </head>
@@ -13,17 +13,31 @@
 <body>
 
   <!-- Navbar -->
-  <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
+  <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
     <div class="container">
-      <a class="navbar-brand" href="#">Pepets Spa</a>
+      <a class="navbar-brand d-flex align-items-center" href="index.html">
+        <i class="fa-solid fa-paw me-2"></i> Pepets Spa
+      </a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav">
-          <li class="nav-item"><a class="nav-link btn active" href="index.html">Inicio</a></li>
-          <li class="nav-item"><a class="nav-link btn" href="servicios.html">Servicios</a></li>
-          <li class="nav-item"><a class="nav-link btn" href="nosotros.html">Nosotros</a></li>
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="servicios.html">Servicios</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="nosotros.html">Nosotros</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="soporte.html">Soporte </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="login.html">Login</a>
+          </li>
         </ul>
       </div>
     </div>
@@ -31,11 +45,14 @@
 
 
 
+
+
+
   <!-- Main -->
   <main class="flex-fill">
 
     <!-- Hero / Banner -->
-    <section class="hero position-relative mt-5">
+    <section class="hero position-relative">
       <div class="container">
 
         <div class="overlay position-absolute top-0 start-0 w-100 h-100" style="background-color: rgba(0,0,0,0.4);">
@@ -56,21 +73,26 @@
     <section class="container my-5" style="padding-top: 100px;">
       <div class="row align-items-center">
         <div class="col-sm-12 col-md-6">
-          <img src="resources/img/pepito.jpg" class="img-fluid rounded" alt="Historia del Spa (Aqui poner una foto del pepito. Nos inspiramos en crear este Spa para mascotas por nuestro Pepito)">
+          <img src="resources/img/pepito.jpg" class="img-fluid rounded"
+            alt="Historia del Spa (Aqui poner una foto del pepito. Nos inspiramos en crear este Spa para mascotas por nuestro Pepito)">
         </div>
         <div class="col-sm-12 col-md-6">
           <h2>Nuestra Historia</h2>
           <p>
-            Pepets Spa nació de la inspiración de dos hermanos gemelos al recibir a Pepe, un perro salchicha color café 
-            que se convirtió en parte fundamental de la familia. Su llegada les hizo comprender la importancia de brindar un cuidado 
-            completo a las mascotas: desde la atención a su pelaje y uñas, hasta masajes y terapias de relajación. 
-            Con esta experiencia nació el deseo de crear un espacio dedicado al bienestar y la felicidad de cada mascota, 
+            Pepets Spa nació de la inspiración de dos hermanos gemelos al recibir a Pepe, un perro salchicha color café
+            que se convirtió en parte fundamental de la familia. Su llegada les hizo comprender la importancia de
+            brindar un cuidado
+            completo a las mascotas: desde la atención a su pelaje y uñas, hasta masajes y terapias de relajación.
+            Con esta experiencia nació el deseo de crear un espacio dedicado al bienestar y la felicidad de cada
+            mascota,
             combinando profesionalismo y cariño en cada detalle.
           </p>
           <h3>Misión</h3>
-          <p>Cuidar y consentir a las mascotas con profesionalismo y cariño, haciendo que cada visita sea una experiencia agradable.</p>
+          <p>Cuidar y consentir a las mascotas con profesionalismo y cariño, haciendo que cada visita sea una
+            experiencia agradable.</p>
           <h3>Visión</h3>
-          <p>Ser el spa para mascotas más confiable y reconocido de Santiago, ofreciendo servicios de alta calidad y personalizados.</p>
+          <p>Ser el spa para mascotas más confiable y reconocido de Santiago, ofreciendo servicios de alta calidad y
+            personalizados.</p>
         </div>
       </div>
     </section>
@@ -79,82 +101,49 @@
 
 
 
-    <!-- <section class="container-historia" style="padding-top: 50px; padding-bottom: 50px;">
-      <div class="row" style="padding-top: 100px;">
-
-        <div class="col-md-2"></div>
-        <div class="col-md-8">
-          <h2 class="text-center mb-4">Nuestra Historia</h2>
 
 
-          <p style="padding-bottom: 30px; padding-top: 10px;">
-            Pepets Spa nació de la inspiración de dos hermanos gemelos al recibir a Pepe, un perro salchicha color café 
-            que se convirtió en parte fundamental de la familia. Su llegada les hizo comprender la importancia de brindar un cuidado 
-            completo a las mascotas: desde la atención a su pelaje y uñas, hasta masajes y terapias de relajación. 
-            Con esta experiencia nació el deseo de crear un espacio dedicado al bienestar y la felicidad de cada mascota, 
-            combinando profesionalismo y cariño en cada detalle.
-          </p>
-          <div>
-            <img src="resources/img/pepito.jpg" class="img-fluid rounded" style="padding-bottom: 60px;"
-              alt="Historia del Spa (Aqui poner una foto del pepito. Nos inspiramos en crear este Spa para mascotas por nuestro Pepito)">
+
+    <!-- Equipo -->
+    <section class="container my-5" style="padding-top: 100px; padding-bottom: 30px;">
+      <h2 class="text-center mb-4" style="padding-bottom: 30px;">Nuestro Equipo</h2>
+      <div class="row text-center">
+
+        <div class="col-md-4 mb-4">
+          <div class="card border-0 shadow-sm">
+            <img src="resources/img/profesional1.png" class="rounded-circle mx-auto mt-3 shadow"
+              style="width:180px; height:180px; object-fit: cover;" alt="Juan Perez">
+            <div class="card-body">
+              <h5 class="card-title">Juan Pérez</h5>
+              <p class="card-text">Fundador & Groomer Principal</p>
+            </div>
           </div>
-
-          <h3 class="text-center mb-4">Misión</h3>
-          <p>Nuestra misión</p>
-
-
-          <h3 class="text-center mb-4">Visión</h3>
-          <p>Nuestra visión</p>
         </div>
-        <div class="col-md-2"></div>
+
+        <div class="col-md-4 mb-4">
+          <div class="card border-0 shadow-sm">
+            <img src="resources/img/profesional3.png" class="rounded-circle mx-auto mt-3 shadow"
+              style="width:180px; height:180px; object-fit: cover;" alt="Maria López">
+            <div class="card-body">
+              <h5 class="card-title">María López</h5>
+              <p class="card-text">Especialista en Spa y Masajes</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4 mb-4">
+          <div class="card border-0 shadow-sm">
+            <img src="resources/img/profesional2.png" class="rounded-circle mx-auto mt-3 shadow"
+              style="width:180px; height:180px; object-fit: cover;" alt="Carlos Gómez">
+            <div class="card-body">
+              <h5 class="card-title">Carlos Gómez</h5>
+              <p class="card-text">Groomer y Atención al Cliente</p>
+            </div>
+          </div>
+        </div>
 
       </div>
-    </section> -->
-
-
-
-
-    <!-- Equipo -->
-    <!-- Equipo -->
-<section class="container my-5" style="padding-top: 100px; padding-bottom: 30px;">
-  <h2 class="text-center mb-4" style="padding-bottom: 30px;">Nuestro Equipo</h2>
-  <div class="row text-center">
-    
-    <div class="col-md-4 mb-4">
-      <div class="card border-0 shadow-sm">
-        <img src="resources/img/profesional1.png"  class="rounded-circle mx-auto mt-3 shadow"
-             style="width:180px; height:180px; object-fit: cover;" alt="Juan Perez">
-        <div class="card-body">
-          <h5 class="card-title">Juan Pérez</h5>
-          <p class="card-text">Fundador & Groomer Principal</p>
-        </div>
-      </div>
-    </div>
-
-    <div class="col-md-4 mb-4">
-      <div class="card border-0 shadow-sm">
-        <img src="resources/img/profesional3.png" class="rounded-circle mx-auto mt-3 shadow"
-             style="width:180px; height:180px; object-fit: cover;" alt="Maria López">
-        <div class="card-body">
-          <h5 class="card-title">María López</h5>
-          <p class="card-text">Especialista en Spa y Masajes</p>
-        </div>
-      </div>
-    </div>
-
-    <div class="col-md-4 mb-4">
-      <div class="card border-0 shadow-sm">
-        <img src="resources/img/profesional2.png" class="rounded-circle mx-auto mt-3 shadow"
-             style="width:180px; height:180px; object-fit: cover;" alt="Carlos Gómez">
-        <div class="card-body">
-          <h5 class="card-title">Carlos Gómez</h5>
-          <p class="card-text">Groomer y Atención al Cliente</p>
-        </div>
-      </div>
-    </div>
-
-  </div>
-</section>
+    </section>
 
 
   </main>
@@ -177,215 +166,24 @@
             <li><a href="index.html" class="text-white text-decoration-none">Inicio</a></li>
             <li><a href="nosotros.html" class="text-white text-decoration-none">Nosotros</a></li>
             <li><a href="servicios.html" class="text-white text-decoration-none">Servicios</a></li>
-            <li><a href="galeria.html" class="text-white text-decoration-none">Galería</a></li>
-            <li><a href="contacto.html" class="text-white text-decoration-none">Contacto</a></li>
+            <li><a href="soporte.html" class="text-white text-decoration-none">Soporte</a></li>
           </ul>
         </div>
 
         <div class="col-md-4 mb-3">
           <h5>Contáctanos</h5>
           <ul class="list-unstyled">
-            <li>Email: spa@mascotas.com</li>
+            <li>Email: pepetsspa@mascotas.com</li>
             <li>Tel: +56 9 1234 5678</li>
             <li>Dirección: Av. Siempre Viva 123, Santiago</li>
           </ul>
-=======
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="css/style.css" />
-    <title>Nosotros - Pepets Spa</title>
-  </head>
-  <body>
-    <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
-      <div class="container">
-        <a class="navbar-brand" href="index.html">Pepets Spa</a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarNav"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav">
-            <li class="nav-item">
-              <a class="nav-link btn active" href="index.html">Inicio</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link btn" href="servicios.html">Servicios</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link btn" href="nosotros.html">Nosotros</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
-
-    <!-- Main -->
-    <main class="flex-fill">
-      <!-- Hero / Banner -->
-      <section class="hero position-relative mt-5">
-        <div class="container">
-          <img
-            src="resources/img/nosotros_banner.jpg"
-            class="img-fluid w-100 rounded"
-            style="height: 400px; object-fit: cover"
-            alt="Nosotros"
-          />
-          <div
-            class="overlay position-absolute top-0 start-0 w-100 h-100"
-            style="background-color: rgba(0, 0, 0, 0.4)"
-          ></div>
-          <div
-            class="hero-content position-absolute top-50 start-50 translate-middle text-center text-white"
-          >
-            <h1>Sobre Nosotros</h1>
-            <p>
-              Conoce nuestro equipo y nuestra pasión por cuidar a tus mascotas.
-            </p>
-          </div>
-        </div>
-      </section>
-
-      <!-- Historia / Misión -->
-      <section class="container my-5">
-        <div class="row align-items-center">
-          <div class="col-md-6">
-            <img
-              src="resources/img/historia.jpg"
-              class="img-fluid rounded"
-              alt="Historia del Spa"
-            />
-          </div>
-          <div class="col-md-6">
-            <h2>Nuestra Historia</h2>
-            <p>
-              Pepets Spa nació con la misión de brindar un cuidado completo y
-              amoroso a cada mascota. Desde baños, corte de pelo, hasta
-              tratamientos de relajación, nuestro equipo se asegura de que tu
-              compañero peludo reciba el mejor trato.
-            </p>
-            <h3>Misión</h3>
-            <p>
-              Cuidar y consentir a las mascotas con profesionalismo y cariño,
-              haciendo que cada visita sea una experiencia agradable.
-            </p>
-            <h3>Visión</h3>
-            <p>
-              Ser el spa para mascotas más confiable y reconocido de Santiago,
-              ofreciendo servicios de alta calidad y personalizados.
-            </p>
-          </div>
-        </div>
-      </section>
-
-      <!-- Equipo -->
-      <section class="container my-5">
-        <h2 class="text-center mb-4">Nuestro Equipo</h2>
-        <div class="row text-center">
-          <div class="col-md-4 mb-3">
-            <img
-              src="resources/img/perfil.png"
-              class="rounded-circle mb-2"
-              style="width: 150px; height: 150px; object-fit: cover"
-              alt="Juan Perez"
-            />
-            <h5>Juan Pérez</h5>
-            <p>Fundador & Groomer Principal</p>
-          </div>
-          <div class="col-md-4 mb-3">
-            <img
-              src="resources/img/perfil.png"
-              class="rounded-circle mb-2"
-              style="width: 150px; height: 150px; object-fit: cover"
-              alt="Maria López"
-            />
-            <h5>María López</h5>
-            <p>Especialista en Spa y Masajes</p>
-          </div>
-          <div class="col-md-4 mb-3">
-            <img
-              src="resources/img/perfil.png"
-              class="rounded-circle mb-2"
-              style="width: 150px; height: 150px; object-fit: cover"
-              alt="Carlos Gómez"
-            />
-            <h5>Carlos Gómez</h5>
-            <p>Groomer y Atención al Cliente</p>
-          </div>
-        </div>
-      </section>
-    </main>
-
-    <!-- Footer -->
-    <footer class="bg-dark text-white pt-4 mt-auto">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-4 mb-3">
-            <h5>Spa de Mascotas 🐾</h5>
-            <p>Cuidamos y consentimos a tus compañeros peludos.</p>
-          </div>
-          <div class="col-md-4 mb-3">
-            <h5>Enlaces Rápidos</h5>
-            <ul class="list-unstyled">
-              <li>
-                <a href="index.html" class="text-white text-decoration-none"
-                  >Inicio</a
-                >
-              </li>
-              <li>
-                <a href="nosotros.html" class="text-white text-decoration-none"
-                  >Quiénes Somos</a
-                >
-              </li>
-              <li>
-                <a href="equipo.html" class="text-white text-decoration-none"
-                  >Nuestro Equipo</a
-                >
-              </li>
-              <li>
-                <a href="servicios.html" class="text-white text-decoration-none"
-                  >Servicios</a
-                >
-              </li>
-              <li>
-                <a href="galeria.html" class="text-white text-decoration-none"
-                  >Galería</a
-                >
-              </li>
-              <li>
-                <a href="contacto.html" class="text-white text-decoration-none"
-                  >Contacto</a
-                >
-              </li>
-            </ul>
-          </div>
-          <div class="col-md-4 mb-3">
-            <h5>Contáctanos</h5>
-            <p>Email: spa@mascotas.com</p>
-            <p>Tel: +56 9 1234 5678</p>
-            <p>Dirección: Av. Siempre Viva 123, Santiago</p>
-          </div>
-        </div>
-        <div class="text-center mt-3 border-top pt-3">
-          <p>&copy; 2025 Spa de Mascotas | Todos los derechos reservados</p>
->>>>>>> ab94eb4a30b08e12f5375351fb41e3c12c440d86
         </div>
 
       </div>
-<<<<<<< HEAD
       <div class="text-center mt-3 border-top pt-3">
         <p>&copy; 2025 Spa de Mascotas | Todos los derechos reservados</p>
       </div>
-      
+
     </div>
   </footer>
 
@@ -393,10 +191,3 @@
 </body>
 
 </html>
-=======
-    </footer>
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
-  </body>
-</html>
->>>>>>> ab94eb4a30b08e12f5375351fb41e3c12c440d86
