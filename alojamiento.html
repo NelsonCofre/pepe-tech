@@ -7,6 +7,43 @@
   <title>Alojamiento - Pepets Spa</title>
   <!-- Sólo Bootstrap CSS (sin JS custom) -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+
+</head>
+
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+    <div class="container">
+      <a class="navbar-brand d-flex align-items-center" href="index.html">
+        <i class="fa-solid fa-paw me-2"></i> Pepets Spa
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="servicios.html">Servicios</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="nosotros.html">Nosotros</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="soporte.html">Soporte </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="login.html">Login</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
   <style>
     :root {
       --accent: #7fb77e
@@ -63,41 +100,6 @@
       }
     }
   </style>
-</head>
-
-<body>
-
-
-  <!-- Navbar -->
-  <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
-    <div class="container">
-      <a class="navbar-brand d-flex align-items-center" href="index.html">
-        <i class="fa-solid fa-paw me-2"></i> Pepets Spa
-      </a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav ms-auto">
-          <li class="nav-item">
-            <a class="nav-link" href="index.html">Inicio</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="servicios.html">Servicios</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link active" href="nosotros.html">Nosotros</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="soporte.html">Soporte </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="login.html">Login</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </nav>
 
   <!-- Hero -->
   <header class="hero">
@@ -133,7 +135,7 @@
           <!-- Right: Form (envía al servidor o a una página de gracias) -->
           <div class="col-lg-8">
             <!-- Nota: este formulario es puro HTML/CSS/Bootstrap — no tiene JS custom. Si querís procesarlo necesitas un endpoint (server) o una página "gracias.html". -->
-            <form id="bookingForm" action="gracias.html" method="post">
+            <form id="bookingForm" action="#" method="post">
               <div class="row g-3">
 
                 <div class="col-md-6">
@@ -238,6 +240,9 @@
                 </div>
               </div>
             </form>
+            <!-- Contenedor para el resumen -->
+            <div id="resumen" class="alert alert-success mt-4 d-none"></div>
+
 
           </div>
         </div>
@@ -245,8 +250,6 @@
       </div>
     </div>
   </main>
-
-
 
   <!-- Footer -->
   <footer class="bg-dark text-white pt-4 mt-auto">
@@ -284,6 +287,8 @@
 
     </div>
   </footer>
+
+  <script src="alojamiento.js"></script>
 
 </body>
 
