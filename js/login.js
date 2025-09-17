@@ -1,20 +1,28 @@
-// Usuario por defecto
-const adminUser = {
+// Inicializar admin por defecto
+const adminDefault = {
+  nombre: "Administrador",
   email: "admin@pepets.com",
-  password: "Admin123",
+  password: "admin123",
   rol: "admin",
 };
 
-// Guardar admin en el array de usuarios si no existe
-let usuarios = JSON.parse(localStorage.getItem("usuarios")) || [];
-const existeAdmin = usuarios.some((u) => u.email === adminUser.email);
+// Forzar recarga si la página viene del cache (botón "atrás")
+window.addEventListener("pageshow", function (event) {
+  if (event.persisted) {
+    window.location.reload();
+  }
+});
 
-if (!existeAdmin) {
-  usuarios.push(adminUser);
+// Obtener usuarios existentes de localStorage
+let usuarios = JSON.parse(localStorage.getItem("usuarios")) || [];
+
+// Agregar admin si no existe
+if (!usuarios.some((u) => u.email === adminDefault.email)) {
+  usuarios.push(adminDefault);
   localStorage.setItem("usuarios", JSON.stringify(usuarios));
 }
 
-// Referencia al botón de login
+// Botón de login
 const btnIngresar = document.querySelector(".btn");
 
 btnIngresar.addEventListener("click", (e) => {
@@ -23,20 +31,33 @@ btnIngresar.addEventListener("click", (e) => {
   const emailInput = document.getElementById("email").value.trim();
   const passwordInput = document.getElementById("password").value.trim();
 
-  // Recuperar todos los usuarios
-  const usuarios = JSON.parse(localStorage.getItem("usuarios")) || [];
+  // Leer usuarios actualizados
+  const usuariosActuales = JSON.parse(localStorage.getItem("usuarios")) || [];
 
-  // Buscar usuario con email y password correctos
-  const usuarioEncontrado = usuarios.find(
+  const usuarioEncontrado = usuariosActuales.find(
     (u) => u.email === emailInput && u.password === passwordInput
   );
 
   if (usuarioEncontrado) {
-    alert("¡Login exitoso! Rol: " + usuarioEncontrado.rol);
-    // Redirigir según rol si quieres
-    // if (usuarioEncontrado.rol === "admin") window.location.href = "dashboard-admin.html";
-    // else window.location.href = "dashboard-usuario.html";
+    // Guardar usuario activo en sessionStorage
+    sessionStorage.setItem("usuarioActivo", JSON.stringify(usuarioEncontrado));
+
+    alert("¡Login exitoso! Redirigiendo...");
+
+    setTimeout(() => {
+      // Redirigir según rol
+      if (usuarioEncontrado.rol === "admin") {
+        window.location.href = "clientes-admin.html"; // Panel admin
+      } else {
+        window.location.href = "index.html"; // Usuario normal
+      }
+    }, 2000);
   } else {
     alert("Correo o contraseña incorrectos.");
   }
+});
+
+// Limpiar sesión al cargar login
+window.addEventListener("DOMContentLoaded", () => {
+  sessionStorage.removeItem("usuarioActivo");
 });

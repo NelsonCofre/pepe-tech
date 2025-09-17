@@ -1,147 +1,175 @@
 <!DOCTYPE html>
 <html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pepets Spa</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Pepets Spa</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
-  <link rel="stylesheet" href="css/style.css" />
-</head>
-
-
-
-<body>
-
-
-
-  <!-- Navbar -->
-  <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
-    <div class="container">
-      <a class="navbar-brand d-flex align-items-center" href="index.html">
-        <i class="fa-solid fa-paw me-2"></i> Pepets Spa
-      </a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav ms-auto">
-          <li class="nav-item">
-            <a class="nav-link active" href="index.html">Inicio</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="servicios.html">Servicios</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="nosotros.html">Nosotros</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="soporte.html">Soporte </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="login.html">Iniciar Sesion</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="registro.html">Registro</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </nav>
-
-
-
-
-  <!-- Hero -->
-  <section class="hero  position-relative">
-    <img src="resources/img/indeximg.jpg" alt="Mascotas felices" class="img-fluid w-100" />
-    <div class="overlay position-absolute top-0 start-0 w-100 h-100"></div>
-    <div class="hero-content position-absolute top-50 start-50 translate-middle text-white text-center px-3">
-      <h1>Bienvenidos a Pepets Spa</h1>
-      <p>El mejor cuidado y hospedaje para tus mascotas.</p>
-      <a href="servicios.html" class="btn btn-secondary mt-3">Ver Servicios</a>
-    </div>
-  </section>
-
-  <!-- Texto de presentación -->
-  <div class="container my-5 text-center px-3">
-    <p>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam
-      doloribus ab sit recusandae soluta dolorem, neque itaque ipsam quidem.
-    </p>
-  </div>
-
-  <!-- Quick Links -->
-  <section class="quick-links py-5 text-center">
-    <div class="container">
-      <div class="row g-4 justify-content-center">
-        <div class="col-md-3">
-          <a href="servicios.html" class="btn btn-outline-primary w-100">Servicios</a>
-          <p>Conoce todo lo que ofrecemos para tus mascotas.</p>
-        </div>
-        <div class="col-md-3">
-          <a href="nosotros.html" class="btn btn-outline-secondary w-100">Nosotros</a>
-          <p>Descubre nuestro equipo y filosofía de trabajo.</p>
-        </div>
-        <div class="col-md-3">
-          <a href="soporte.html" class="btn btn-outline-success w-100">Soporte</a>
-          <p>Agenda una cita o resuelve tus dudas.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- CTA -->
-  <section class="cta py-5 text-center bg-light" style="padding-bottom: 50px;">
-    <div class="container">
-      <h2>Agenda una cita hoy</h2>
-      <p>Tu mascota merece el mejor cuidado.</p>
-      <a href="servicios-spa.html" class="btn btn-primary btn-lg mt-3">Agendar</a>
-    </div>
-  </section>
-
-
-
-
-  <!-- Footer -->
-  <footer class="bg-dark text-white pt-4 mt-auto">
-    <div class="container">
-      <div class="row">
-
-        <div class="col-md-4 mb-3">
-          <h5>Spa de Mascotas 🐾</h5>
-          <p>Cuidamos y consentimos a tus compañeros peludos.</p>
-        </div>
-
-        <div class="col-md-4 mb-3">
-          <h5>Enlaces Rápidos</h5>
-          <ul class="list-unstyled">
-            <li><a href="index.html" class="text-white text-decoration-none">Inicio</a></li>
-            <li><a href="nosotros.html" class="text-white text-decoration-none">Nosotros</a></li>
-            <li><a href="servicios.html" class="text-white text-decoration-none">Servicios</a></li>
-            <li><a href="soporte.html" class="text-white text-decoration-none">Soporte</a></li>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+      <div class="container">
+        <a class="navbar-brand d-flex align-items-center" href="index.html">
+          <i class="fa-solid fa-paw me-2"></i> Pepets Spa
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link active" href="index.html">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="servicios.html">Servicios</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="nosotros.html">Nosotros</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="soporte.html">Soporte </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="login.html">Iniciar Sesion</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="registro.html">Registro</a>
+            </li>
           </ul>
         </div>
-
-        <div class="col-md-4 mb-3">
-          <h5>Contáctanos</h5>
-          <ul class="list-unstyled">
-            <li>Email: pepetsspa@mascotas.com</li>
-            <li>Tel: +56 9 1234 5678</li>
-            <li>Dirección: Av. Siempre Viva 123, Santiago</li>
-          </ul>
-        </div>
-
       </div>
-      <div class="text-center mt-3 border-top pt-3">
-        <p>&copy; 2025 Spa de Mascotas | Todos los derechos reservados</p>
-      </div>
+    </nav>
 
+    <!-- Hero -->
+    <section class="hero position-relative">
+      <img
+        src="resources/img/indeximg.jpg"
+        alt="Mascotas felices"
+        class="img-fluid w-100"
+      />
+      <div class="overlay position-absolute top-0 start-0 w-100 h-100"></div>
+      <div
+        class="hero-content position-absolute top-50 start-50 translate-middle text-white text-center px-3"
+      >
+        <h1>Bienvenidos a Pepets Spa</h1>
+        <p>El mejor cuidado y hospedaje para tus mascotas.</p>
+        <a href="servicios.html" class="btn btn-secondary mt-3"
+          >Ver Servicios</a
+        >
+      </div>
+    </section>
+
+    <!-- Texto de presentación -->
+    <div class="container my-5 text-center px-3">
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam
+        doloribus ab sit recusandae soluta dolorem, neque itaque ipsam quidem.
+      </p>
     </div>
-  </footer>
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
-</body>
+    <!-- Quick Links -->
+    <section class="quick-links py-5 text-center">
+      <div class="container">
+        <div class="row g-4 justify-content-center">
+          <div class="col-md-3">
+            <a href="servicios.html" class="btn btn-outline-primary w-100"
+              >Servicios</a
+            >
+            <p>Conoce todo lo que ofrecemos para tus mascotas.</p>
+          </div>
+          <div class="col-md-3">
+            <a href="nosotros.html" class="btn btn-outline-secondary w-100"
+              >Nosotros</a
+            >
+            <p>Descubre nuestro equipo y filosofía de trabajo.</p>
+          </div>
+          <div class="col-md-3">
+            <a href="soporte.html" class="btn btn-outline-success w-100"
+              >Soporte</a
+            >
+            <p>Agenda una cita o resuelve tus dudas.</p>
+          </div>
+        </div>
+      </div>
+    </section>
 
+    <!-- CTA -->
+    <section class="cta py-5 text-center bg-light" style="padding-bottom: 50px">
+      <div class="container">
+        <h2>Agenda una cita hoy</h2>
+        <p>Tu mascota merece el mejor cuidado.</p>
+        <a href="servicios-spa.html" class="btn btn-primary btn-lg mt-3"
+          >Agendar</a
+        >
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white pt-4 mt-auto">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4 mb-3">
+            <h5>Spa de Mascotas 🐾</h5>
+            <p>Cuidamos y consentimos a tus compañeros peludos.</p>
+          </div>
+
+          <div class="col-md-4 mb-3">
+            <h5>Enlaces Rápidos</h5>
+            <ul class="list-unstyled">
+              <li>
+                <a href="index.html" class="text-white text-decoration-none"
+                  >Inicio</a
+                >
+              </li>
+              <li>
+                <a href="nosotros.html" class="text-white text-decoration-none"
+                  >Nosotros</a
+                >
+              </li>
+              <li>
+                <a href="servicios.html" class="text-white text-decoration-none"
+                  >Servicios</a
+                >
+              </li>
+              <li>
+                <a href="soporte.html" class="text-white text-decoration-none"
+                  >Soporte</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div class="col-md-4 mb-3">
+            <h5>Contáctanos</h5>
+            <ul class="list-unstyled">
+              <li>Email: pepetsspa@mascotas.com</li>
+              <li>Tel: +56 9 1234 5678</li>
+              <li>Dirección: Av. Siempre Viva 123, Santiago</li>
+            </ul>
+          </div>
+        </div>
+        <div class="text-center mt-3 border-top pt-3">
+          <p>&copy; 2025 Spa de Mascotas | Todos los derechos reservados</p>
+        </div>
+      </div>
+    </footer>
+    <script src="js/navbar.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
 </html>
