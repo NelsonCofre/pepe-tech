@@ -256,3 +256,191 @@ footer a:hover {
     padding: 0.8rem;
   }
 }
+
+/* ===================== */
+/* BASE / RESET          */
+/* ===================== */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Segoe UI", sans-serif;
+  background-color: #fff;
+  padding-top: 70px; /* navbar fija */
+}
+
+/* ===================== */
+/* NAVBAR                */
+/* ===================== */
+.navbar {
+  background-color: #f8f9fa;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.navbar .nav-link {
+  margin-right: 10px;
+  transition: transform 0.2s, background-color 0.2s;
+}
+
+.navbar .nav-link:hover {
+  background-color: hsl(180, 74%, 73%);
+  color: #fff;
+  transform: scale(1.05);
+}
+
+/* ===================== */
+/* TABLA CLIENTES        */
+/* ===================== */
+table.table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+table th, table td {
+  padding: 0.5rem;
+  text-align: left;
+  vertical-align: middle;
+}
+
+table th {
+  background-color: #f8f9fa;
+  font-weight: bold;
+}
+
+table .btn-sm {
+  margin: 0.2rem 0.2rem 0.2rem 0;
+}
+
+/* ===================== */
+/* CARD / FORMULARIOS    */
+/* ===================== */
+.alojamiento-wrapper, 
+.login-wrapper, 
+.service-description {
+  border-radius: 15px;
+  padding: 1.5rem;
+  text-align: center;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.08);
+  background: linear-gradient(145deg, #ffe6f0, #e3fdfd);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.alojamiento-wrapper:hover, 
+.service-description:hover,
+.login-wrapper:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 30px rgba(0,0,0,0.12);
+}
+
+.alojamiento-wrapper h3,
+.login-wrapper h3 {
+  font-size: 1.6rem;
+  margin-bottom: 1rem;
+  font-weight: 700;
+}
+
+/* FORM CONTROL */
+input.form-control,
+textarea.form-control {
+  border-radius: 15px;
+  padding: 0.6rem 0.9rem;
+  margin-bottom: 0.8rem;
+  border: 1px solid #ccc;
+  font-size: 0.95rem;
+}
+
+input.form-control:focus,
+textarea.form-control:focus {
+  border-color: #4dabf7;
+  box-shadow: 0 0 8px rgba(77,171,247,0.3);
+  outline: none;
+}
+
+/* BOTONES */
+.btn-custom, .btn-add, .btn-sm {
+  border-radius: 20px;
+  padding: 0.5rem 0.8rem;
+  font-weight: 600;
+  font-size: 0.95rem;
+  transition: all 0.2s;
+}
+
+.btn-custom:hover, .btn-add:hover, .btn-sm:hover {
+  transform: scale(1.02);
+}
+
+/* ===================== */
+/* RESPONSIVE MÓVIL      */
+/* ===================== */
+@media (max-width: 768px) {
+  .hero-content h1 { font-size: 1.8rem; }
+  .hero-content p { font-size: 1rem; }
+  .alojamiento-wrapper, .login-wrapper {
+    padding: 1.2rem;
+  }
+  .alojamiento-wrapper h3, .login-wrapper h3 { font-size: 1.5rem; }
+  input.form-control, textarea.form-control {
+    padding: 0.5rem 0.8rem;
+    font-size: 0.9rem;
+  }
+  .btn-custom, .btn-add, .btn-sm {
+    font-size: 0.9rem;
+    padding: 0.4rem 0.6rem;
+  }
+}
+
+@media (max-width: 576px) {
+  /* TABLA RESPONSIVA */
+  table.table, table tbody, table tr, table td {
+    display: block;
+    width: 100%;
+  }
+
+  table thead {
+    display: none; /* ocultar encabezados */
+  }
+
+  table tr {
+    margin-bottom: 0.8rem;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 0.5rem;
+    background-color: #f9f9f9;
+  }
+
+  table td {
+    text-align: right;
+    padding-left: 50%;
+    position: relative;
+    border: none;
+    border-bottom: 1px solid #eee;
+    font-size: 0.9rem;
+  }
+
+  table td::before {
+    content: attr(data-label);
+    position: absolute;
+    left: 10px;
+    width: 45%;
+    font-weight: bold;
+    text-align: left;
+    font-size: 0.85rem;
+  }
+
+  table td:last-child {
+    border-bottom: 0;
+  }
+
+  table td .btn {
+    width: 48%;
+    margin-bottom: 0.2rem;
+  }
+
+  /* Ajuste de padding general */
+  body {
+    padding-top: 60px;
+  }
+}

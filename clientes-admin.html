@@ -51,20 +51,33 @@
 
     <div class="container mt-5 pt-5">
       <h2 class="mb-4">Listado de Clientes</h2>
-      <table class="table table-bordered table-striped">
-        <thead class="table-light">
-          <tr>
-            <th>Nombre</th>
-            <th>Email</th>
-            <th>Mascota</th>
-            <th>Teléfono</th>
-            <th>Acciones</th>
-          </tr>
-        </thead>
-        <tbody id="tablaClientes">
-          <!-- Aquí se renderizan los clientes con JS -->
-        </tbody>
-      </table>
+
+      <div class="table-responsive">
+        <table class="table table-bordered table-striped">
+          <thead class="table-light">
+            <tr>
+              <th>Nombre</th>
+              <th>Email</th>
+              <th>Mascota</th>
+              <th>Teléfono</th>
+              <th>Acciones</th>
+            </tr>
+          </thead>
+          <tbody id="tablaClientes">
+            <tr>
+              <td>Juan Pérez</td>
+              <td>juan@email.com</td>
+              <td>Firulais</td>
+              <td>912345678</td>
+              <td>
+                <button class="btn btn-sm btn-warning">Editar</button>
+                <button class="btn btn-sm btn-danger">Eliminar</button>
+              </td>
+            </tr>
+            <!-- Más filas se generan con JS -->
+          </tbody>
+        </table>
+      </div>
     </div>
 
     <!-- Scripts -->
