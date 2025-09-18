@@ -51,37 +51,34 @@
   </nav>
 
 
- 
 
-  <div class="container" style="padding-bottom: 200px; padding-top: 200px;">
+
+  <div class="container" style="padding-bottom: 250px; padding-top: 200px;">
     <h2 style="text-align: center;">Soporte de Ayuda</h2>
     <div class="row">
-
-      <div class="col-md-3"></div>
-      <div class="col-md-6">
-        <form>
+      <div class="col-12 col-md-2 col-lg-2"></div>
+      <div class="col-12 col-md-8  col-lg-8">
+        <form id="formSoporte">
           <div class="mb-3 text-start">
             <label for="email" class="form-label">Correo</label>
-            <input type="email"
-                   class="form-control"
-                   placeholder="Su correo">
+            <input type="email" class="form-control" id="email" name="email" placeholder="Su correo">
           </div>
           <div class="mb-3 text-start">
             <label for="asunto" class="form-label">Asunto</label>
-            <input type="text"
-                   class="form-control"
-                   placeholder="Asunto del problema">
+            <input type="text" class="form-control" id="asunto" name="asunto" placeholder="Asunto del problema">
           </div>
           <div class="mb-3 text-start">
-            <label for="mensaje" class="form-label">Mensaje</label>
-            <input type="text"
-                   class="form-control"
-                   placeholder="Comente su problema técnico">
+            <div class="mb-3 text-start">
+              <label for="mensaje" class="form-label">Mensaje</label>
+              <textarea class="form-control" id="mensaje" name="mensaje" placeholder="Comente su problema técnico"
+                rows="5"></textarea>
+            </div>
+
           </div>
-          <button class="btn btn-primary w-100 btn-custom">Ingresar</button>
+          <button type="submit" class="btn btn-primary w-100 btn-custom">Enviar</button>
         </form>
       </div>
-      <div class="col-md-3"></div>
+      <div class="col-12 col-md-2 col-lg-2"></div>
     </div>
   </div>
 
@@ -129,6 +126,7 @@
   </footer>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/soporte.js"></script>
 </body>
 
 </html>
