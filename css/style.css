@@ -31,13 +31,6 @@ body {
   transform: scale(1.05);
 }
 
-.navbar .btn-login:hover,
-.navbar .btn-register:hover {
-  background-color: hsla(214, 100%, 58%, 0.35);
-  color: #fff;
-  transform: scale(1.05);
-}
-
 /* ===================== */
 /* HERO                  */
 /* ===================== */
@@ -86,6 +79,7 @@ footer {
   background-color: #222;
   color: #fff;
   padding: 2rem 1rem;
+  text-align: center;
 }
 
 footer a {
@@ -98,84 +92,30 @@ footer a:hover {
 }
 
 /* ===================== */
-/* RESPONSIVE            */
+/* SERVICIOS / CARDS     */
 /* ===================== */
-@media (max-width: 768px) {
-  .hero-content h1 { font-size: 2rem; }
-  .hero-content p { font-size: 1rem; }
-}
-
-
-
-
-/* ===================== */
-/* SERVICIOS - CARDS     */
-/* ===================== */
-.service-card {
+.service-card, .servicio-card {
   border-radius: 15px;
   overflow: hidden;
+  padding: 1rem;
+  text-align: center;
   transition: transform 0.3s, box-shadow 0.3s;
 }
 
 .service-card img {
   width: 100%;
-  height: 250px; /* fuerza misma altura */
+  height: 250px;
   object-fit: cover;
 }
 
-.service-card:hover {
+.service-card:hover, .servicio-card:hover {
   transform: translateY(-8px);
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
 }
 
-.service-card .card-title {
+.service-card .card-title, .servicio-card .card-title {
   font-weight: bold;
   margin-bottom: 10px;
-}
-
-.service-card .btn {
-  border-radius: 10px;
-  font-weight: 600;
-}
-
-/* Botón agregar / seleccionar */
-.btn-add {
-  border-radius: 12px;
-  padding: 0.5rem 1rem;
-  font-weight: 600;
-  background-color: #4dabf7;
-  color: #fff;
-  border: none;
-  cursor: pointer;
-  transition: all 0.2s;
-}
-
-.btn-add:hover {
-  background-color: #339af0;
-  transform: scale(1.03);
-}
-
-.btn-add.selected {
-  background-color: #6c757d; /* gris al estar seleccionado */
-  border-color: #6c757d;
-  color: #fff;
-}
-
-/* Cards de servicios para selección */
-.servicio-card {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  text-align: center;
-  border-radius: 15px;
-  padding: 1rem;
-  box-shadow: 0 5px 15px rgba(0,0,0,0.05);
-  transition: transform 0.2s, box-shadow 0.2s;
-}
-
-.servicio-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
 }
 
 .subtotal {
@@ -185,109 +125,324 @@ footer a:hover {
 }
 
 /* ===================== */
-/* LOGIN PAGE            */
+/* BOTONES               */
 /* ===================== */
-.login-page {
-  padding-top: 0;
-  min-height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background: linear-gradient(135deg, #e3fdfd, #ffe6fa);
-}
-
-.login-wrapper {
-  width: 100%;
-  max-width: 400px;
-  padding: 2rem;
-  background-color: #fff;
-  border-radius: 20px;
-  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
-  text-align: center;
-}
-
-.login-wrapper h3 {
-  font-weight: 600;
-  font-size: 1.8rem;
-  margin-bottom: 1.5rem;
-  color: #333;
-}
-
-
-
-img {
-  width: 100%;
-  height: 400px;
-  object-fit: cover;
-}
-
-
-
-
-.login-wrapper .form-control {
-  border-radius: 12px;
-  padding: 0.75rem 1rem;
-  margin-bottom: 1rem;
-  border: 1px solid #ccc;
-  transition: border-color 0.2s, box-shadow 0.2s;
-}
-
-.login-wrapper .form-control:focus {
-  border-color: #339af0;
-  box-shadow: 0 0 5px rgba(51, 154, 240, 0.5);
-  outline: none;
-}
-
-.login-wrapper .btn-custom {
-  border-radius: 12px;
-  padding: 0.75rem;
+.btn-add, .btn-custom {
+  border-radius: 25px;
+  padding: 0.9rem;
   font-weight: 600;
   background-color: #4dabf7;
   border: none;
   color: #fff;
-  transition: background-color 0.2s, transform 0.2s;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
 }
 
-.login-wrapper .btn-custom:hover {
+.btn-add:hover, .btn-custom:hover {
   background-color: #339af0;
   transform: scale(1.03);
+  box-shadow: 0 6px 20px rgba(51,154,240,0.3);
 }
 
-.login-wrapper .forgot-password {
-  display: block;
-  margin-top: 0.5rem;
-  font-size: 0.9rem;
-  color: #555;
-  text-decoration: none;
+.btn-add.selected {
+  background-color: #6c757d;
+  border-color: #6c757d;
+  color: #fff;
 }
 
-.login-wrapper .forgot-password:hover {
-  color: #339af0;
-  text-decoration: underline;
+/* ===================== */
+/* FORMULARIOS           */
+/* ===================== */
+#bookingForm .form-control,
+.login-wrapper .form-control {
+  border-radius: 20px;
+  padding: 0.85rem 1.2rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ccc;
+  background: #fdfdfd;
+  box-shadow: inset 0 3px 6px rgba(0,0,0,0.05);
+  font-size: 1rem;
+  transition: all 0.3s ease;
 }
 
-/* Responsive login */
-@media (max-width: 500px) {
+#bookingForm .form-control:focus,
+.login-wrapper .form-control:focus {
+  border-color: #4dabf7;
+  box-shadow: 0 0 12px rgba(77, 171, 247, 0.3);
+  outline: none;
+  background: #fff;
+}
+
+/* ===================== */
+/* ALOJAMIENTO CARD       */
+/* ===================== */
+.alojamiento-wrapper, .service-description {
+  border-radius: 25px;
+  padding: 2rem;
+  text-align: center;
+  box-shadow: 0 15px 35px rgba(0,0,0,0.1);
+  background: linear-gradient(145deg, #ffe6f0, #e3fdfd);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.alojamiento-wrapper:hover, .service-description:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+}
+
+.alojamiento-wrapper h3 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  font-weight: 700;
+  color: #333;
+}
+
+/* ===================== */
+/* LOGIN / REGISTRO       */
+/* ===================== */
+.login-wrapper {
+  width: 100%;
+  max-width: 420px;
+  padding: 2rem;
+  border-radius: 25px;
+  background-color: #fff;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+  text-align: center;
+  transition: transform 0.3s, box-shadow 0.3s;
+  margin: 3rem auto;
+}
+
+.login-wrapper:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 35px rgba(0,0,0,0.15);
+}
+
+.login-wrapper h3 {
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+  color: #333;
+}
+
+.login-wrapper .btn-custom {
+  width: 100%;
+}
+
+/* ===================== */
+/* RESPONSIVE             */
+/* ===================== */
+@media (max-width: 768px) {
+  .hero-content h1 { font-size: 2rem; }
+  .hero-content p { font-size: 1rem; }
+}
+
+@media (max-width: 576px) {
+  .alojamiento-wrapper,
   .login-wrapper {
     padding: 1.5rem;
   }
 
+  .alojamiento-wrapper h3,
   .login-wrapper h3 {
-    font-size: 1.5rem;
+    font-size: 1.7rem;
+  }
+
+  .form-control {
+    padding: 0.8rem 1rem;
+  }
+
+  .btn-custom, .btn-add {
+    font-size: 1rem;
+    padding: 0.8rem;
   }
 }
 
+/* ===================== */
+/* BASE / RESET          */
+/* ===================== */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
 
+body {
+  font-family: "Segoe UI", sans-serif;
+  background-color: #fff;
+  padding-top: 70px; /* navbar fija */
+}
 
+/* ===================== */
+/* NAVBAR                */
+/* ===================== */
+.navbar {
+  background-color: #f8f9fa;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
 
+.navbar .nav-link {
+  margin-right: 10px;
+  transition: transform 0.2s, background-color 0.2s;
+}
 
+.navbar .nav-link:hover {
+  background-color: hsl(180, 74%, 73%);
+  color: #fff;
+  transform: scale(1.05);
+}
 
+/* ===================== */
+/* TABLA CLIENTES        */
+/* ===================== */
+table.table {
+  width: 100%;
+  border-collapse: collapse;
+}
 
+table th, table td {
+  padding: 0.5rem;
+  text-align: left;
+  vertical-align: middle;
+}
 
+table th {
+  background-color: #f8f9fa;
+  font-weight: bold;
+}
 
+table .btn-sm {
+  margin: 0.2rem 0.2rem 0.2rem 0;
+}
 
+/* ===================== */
+/* CARD / FORMULARIOS    */
+/* ===================== */
+.alojamiento-wrapper, 
+.login-wrapper, 
+.service-description {
+  border-radius: 15px;
+  padding: 1.5rem;
+  text-align: center;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.08);
+  background: linear-gradient(145deg, #ffe6f0, #e3fdfd);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
 
+.alojamiento-wrapper:hover, 
+.service-description:hover,
+.login-wrapper:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 30px rgba(0,0,0,0.12);
+}
 
+.alojamiento-wrapper h3,
+.login-wrapper h3 {
+  font-size: 1.6rem;
+  margin-bottom: 1rem;
+  font-weight: 700;
+}
 
+/* FORM CONTROL */
+input.form-control,
+textarea.form-control {
+  border-radius: 15px;
+  padding: 0.6rem 0.9rem;
+  margin-bottom: 0.8rem;
+  border: 1px solid #ccc;
+  font-size: 0.95rem;
+}
 
+input.form-control:focus,
+textarea.form-control:focus {
+  border-color: #4dabf7;
+  box-shadow: 0 0 8px rgba(77,171,247,0.3);
+  outline: none;
+}
 
+/* BOTONES */
+.btn-custom, .btn-add, .btn-sm {
+  border-radius: 20px;
+  padding: 0.5rem 0.8rem;
+  font-weight: 600;
+  font-size: 0.95rem;
+  transition: all 0.2s;
+}
+
+.btn-custom:hover, .btn-add:hover, .btn-sm:hover {
+  transform: scale(1.02);
+}
+
+/* ===================== */
+/* RESPONSIVE MÓVIL      */
+/* ===================== */
+@media (max-width: 768px) {
+  .hero-content h1 { font-size: 1.8rem; }
+  .hero-content p { font-size: 1rem; }
+  .alojamiento-wrapper, .login-wrapper {
+    padding: 1.2rem;
+  }
+  .alojamiento-wrapper h3, .login-wrapper h3 { font-size: 1.5rem; }
+  input.form-control, textarea.form-control {
+    padding: 0.5rem 0.8rem;
+    font-size: 0.9rem;
+  }
+  .btn-custom, .btn-add, .btn-sm {
+    font-size: 0.9rem;
+    padding: 0.4rem 0.6rem;
+  }
+}
+
+@media (max-width: 576px) {
+  /* TABLA RESPONSIVA */
+  table.table, table tbody, table tr, table td {
+    display: block;
+    width: 100%;
+  }
+
+  table thead {
+    display: none; /* ocultar encabezados */
+  }
+
+  table tr {
+    margin-bottom: 0.8rem;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 0.5rem;
+    background-color: #f9f9f9;
+  }
+
+  table td {
+    text-align: right;
+    padding-left: 50%;
+    position: relative;
+    border: none;
+    border-bottom: 1px solid #eee;
+    font-size: 0.9rem;
+  }
+
+  table td::before {
+    content: attr(data-label);
+    position: absolute;
+    left: 10px;
+    width: 45%;
+    font-weight: bold;
+    text-align: left;
+    font-size: 0.85rem;
+  }
+
+  table td:last-child {
+    border-bottom: 0;
+  }
+
+  table td .btn {
+    width: 48%;
+    margin-bottom: 0.2rem;
+  }
+
+  /* Ajuste de padding general */
+  body {
+    padding-top: 60px;
+  }
+}
+
+/* El pepe */
