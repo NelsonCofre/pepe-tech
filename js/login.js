@@ -1,3 +1,5 @@
+
+
 // Inicializar admin por defecto
 const adminDefault = {
   nombre: "Administrador",

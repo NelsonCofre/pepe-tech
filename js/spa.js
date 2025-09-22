@@ -1,10 +1,33 @@
+
 let subtotal = 0;
 const subtotalEl = document.getElementById("subtotal");
 const contPerros = document.getElementById("serviciosPerros");
 const contGatos = document.getElementById("serviciosGatos");
 
+// Servicios por defecto
+const serviciosDefault = [
+  { id: 1, nombre: "Baño y Corte", precio: 20000, categoria: "Perros" },
+  { id: 2, nombre: "Spa Relajante", precio: 15000, categoria: "Perros" },
+  { id: 3, nombre: "Corte de Uñas", precio: 5000, categoria: "Perros" },
+  { id: 4, nombre: "Baño Gato", precio: 12000, categoria: "Gatos" },
+  { id: 5, nombre: "Cepillado y Pelaje", precio: 10000, categoria: "Gatos" },
+  { id: 6, nombre: "Corte de Uñas Gato", precio: 4000, categoria: "Gatos" }
+];
+
+// Inicializar si está vacío
+if (!localStorage.getItem("servicios")) {
+  localStorage.setItem("servicios", JSON.stringify(serviciosDefault));
+}
+
 // Leer servicios del localStorage
 const servicios = JSON.parse(localStorage.getItem("servicios")) || [];
+
+// Guardar en localStorage1
+function guardarServicios() {
+  localStorage.setItem("servicios", JSON.stringify(servicios));
+  renderServicios();
+}
+
 
 // Renderizar servicios separados por categoría
 function renderServiciosSpa() {
